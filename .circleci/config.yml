@@ -54,7 +54,7 @@ jobs:
 
   lint:
     <<: *node_executor
-    resource_class: medium+
+    resource_class: medium+.gen2
     steps:
       - ci/pre-setup
       - node/npm-install
@@ -77,7 +77,7 @@ jobs:
 
   e2e:
     <<: *node_executor
-    resource_class: medium+
+    resource_class: medium+.gen2
     steps:
       - ci/pre-setup
       - node/npm-install
